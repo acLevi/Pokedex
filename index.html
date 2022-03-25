@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokédex</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-  <header>
-    <h1>Pokédex</h1>
-  </header>
-  <main>
-    <section>
-      <div class="pokedex-control">
-        <div class="control-option">
-          <input type="search" name="searchPokemon" id="searchPokemon" placeholder="Search Pokémon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Pokédex</h1>
+    </header>
+    <main>
+      <section>
+        <div class="pokedex-control">
+          <div class="control-option">
+            <input
+              type="search"
+              name="searchPokemon"
+              id="searchPokemon"
+              placeholder="Search Pokémon"
+            />
+          </div>
+          <div class="control-option">
+            <label for="selectType">Type: </label>
+            <select name="selectType" id="selectType">
+              <option value="">All</option>
+            </select>
+          </div>
+          <div class="control-option control-grid">
+            <button class="grid-selected" id="gridRoomy">
+              <i class="bx bxs-grid-alt"></i>
+            </button>
+            <button id="gridCompact"><i class="bx bxs-grid"></i></button>
+          </div>
         </div>
-        <div class="control-option">
-          <label for="selectType">Type: </label>
-          <select name="selectType" id="selectType">
-            <option value="">All</option>
-          </select>
-        </div>
-        <div class="control-option control-grid">
-          <button class="grid-selected" id="gridRoomy"><i class='bx bxs-grid-alt'></i></button>
-          <button id="gridCompact"><i class='bx bxs-grid' ></i></button>
-        </div>
-      </div>
-    </section>
-    <section>
-      <ul class="pokedex-grid"></ul>
-    </section>
-  </main>
-</body>
+      </section>
+      <section>
+        <ul class="pokedex-grid"></ul>
+      </section>
+    </main>
+  </body>
+  <script src="js/app.js"></script>
 </html>
